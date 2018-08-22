@@ -1,39 +1,25 @@
 export const ADDITEM = 'ADDITEM';
 export const DELETEITEM = 'DELETEITEM';
-export const EDITITEM = 'EDITITEM';
-export const READITEM = 'READITEM';
 export const TOGGLEITEM = 'TOGGLEITEM';
 
-
-export const readItem  = () => {
+export const addItem = (value) => {
     return {
-        type: READITEM
-    };
-};
-
-export const addItem = () => {
-    return {
-        type: ADDITEM
-        
+        type: ADDITEM,
+        value
     }
 }
 
-export const editItem = () => {
+export const deleteItem = (id) => {
     return {
-        type: EDITITEM
-        
+        type: DELETEITEM,
+        id
     }
 }
 
-export const deleteItem = () => {
+export const toggleItem = (value) => {
     return {
-        type: DELETEITEM
-        
+        type: TOGGLEITEM,
+        value
     }
 }
 
-export const toggleItem = () => {
-    return {
-        type: TOGGLEITEM
-    }
-}
