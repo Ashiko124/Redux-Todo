@@ -2,10 +2,14 @@ export const ADDITEM = 'ADDITEM';
 export const DELETEITEM = 'DELETEITEM';
 export const TOGGLEITEM = 'TOGGLEITEM';
 
-export const addItem = (value) => {
+export const addItem = ({title, effort, value}) => {
     return {
         type: ADDITEM,
-        value
+        payload: {
+            title,
+            effort,
+            value
+        }
     }
 }
 

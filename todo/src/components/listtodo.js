@@ -9,8 +9,8 @@ const TodoList = ({todos, onTodoClick}) => (
     <ul>
         {console.log(todos)}
         {console.log(typeof todos)}
-        {todos.map((todo, value) => (
-            <Todo key={value} {...todo} onClick={() => onTodoClick(value)}/>
+        {todos.map( (todo, value)  => (
+            <Todo {...todo} onClick={() => onTodoClick(value)}/>
         ))}
     </ul>
 )
